@@ -518,10 +518,10 @@ nav .navbar-toggler {
 
 @media (max-width: 540px) {
   nav .nav-link {
-    font-size: 1.1rem;
+    font-size: 1.8rem;
   }
   nav .nav-link-phone i {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
   }
   .navbar-brand {
     font-size: 1.8rem;
