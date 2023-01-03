@@ -11,6 +11,7 @@ html {
 
 body {
   background-color: #1b1c1d;
+  background-size: 100%;
 }
 
 :root {
@@ -54,7 +55,7 @@ body {
 }
 
 nav {
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: var(--bodyColor);
 }
 
@@ -124,15 +125,15 @@ nav .navbar-toggler {
 }
 
 .hero-img-one {
-  background-image: url("/img/HeroIMG/bathroom-g7da78a21b_1920.jpg");
+  background-image: url("./img/HeroIMG/bathroom-g7da78a21b_1920.jpg");
 }
 
 .hero-img-two {
-  background-image: url("/img/HeroIMG/bedroom-gce56ceb2f_1920.jpg");
+  background-image: url("./img/HeroIMG/bedroom-gce56ceb2f_1920.jpg");
 }
 
 .hero-img-three {
-  background-image: url("/img/HeroIMG/kuchnia3.jpg");
+  background-image: url("./img/HeroIMG/kuchnia3.jpg");
 }
 
 .carousel-main-button {
