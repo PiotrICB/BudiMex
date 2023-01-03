@@ -11,7 +11,6 @@ html {
 
 body {
   background-color: #1b1c1d;
-  background-size: 100%;
 }
 
 :root {
@@ -74,7 +73,7 @@ nav .nav-link {
 }
 
 nav .navbar-brand {
-  font-size: 2.6rem;
+  font-size: 2rem;
 }
 
 nav .navbar-toggler {
@@ -125,15 +124,15 @@ nav .navbar-toggler {
 }
 
 .hero-img-one {
-  background-image: url("./img/HeroIMG/bathroom-g7da78a21b_1920.jpg");
+  background-image: url("../img/HeroIMG/bathroom-g7da78a21b_1920.jpg");
 }
 
 .hero-img-two {
-  background-image: url("./img/HeroIMG/bedroom-gce56ceb2f_1920.jpg");
+  background-image: url("../img/HeroIMG/bedroom-gce56ceb2f_1920.jpg");
 }
 
 .hero-img-three {
-  background-image: url("./img/HeroIMG/kuchnia3.jpg");
+  background-image: url("../img/HeroIMG/kuchnia3.jpg");
 }
 
 .carousel-main-button {
@@ -337,7 +336,7 @@ nav .navbar-toggler {
 }
 
 .footer {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: bold;
   background-color: var(--bodyColor);
 }
@@ -367,7 +366,7 @@ nav .navbar-toggler {
 }
 
 .footer .list-group-item {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   margin-bottom: 0.5rem;
   background-color: transparent;
   color: #adacac;
@@ -381,7 +380,7 @@ nav .navbar-toggler {
 }
 
 .footer .list-group-item-contact {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: #adacac;
 }
 
