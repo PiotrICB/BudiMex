@@ -11,7 +11,6 @@ html {
 
 body {
   background-color: #1b1c1d;
-  background-size: 120%;
 }
 
 :root {
@@ -63,12 +62,18 @@ nav i {
   color: var(--maninColor);
 }
 
+nav .logo {
+  position: relative;
+  height: 42px;
+  width: 160px;
+}
+
 nav .nav-link {
   font-weight: 500;
 }
 
 nav .navbar-brand {
-  font-size: 3rem;
+  font-size: 2.6rem;
 }
 
 nav .navbar-toggler {
@@ -76,47 +81,21 @@ nav .navbar-toggler {
   padding: 0rem 1.8rem;
 }
 
-.main-hero-carousle {
-  height: 800px;
-}
-
-.carousel-item {
-  height: 800px;
-  overflow: hidden;
-}
-
-.carousel-item-box {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-}
-
-.carousel-img {
+.hero-img {
   position: relative;
-  z-index: 0;
-  height: 100%;
-  background-attachment: fixed;
   background-position: center;
   background-size: cover;
+  height: 800px;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
 }
 
-.carousel-img-one {
-  background-image: url("../img/HeroIMG/kuchnia3.jpg");
-}
-
-.carousel-img-two {
-  background-image: url("../img/HeroIMG/bedroom-gce56ceb2f_1920.jpg");
-}
-
-.carousel-img-three {
-  background-image: url("../img/HeroIMG/bathroom-g7da78a21b_1920.jpg");
-}
-
-.carousel-text {
+.hero-img .hero-text {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -127,20 +106,33 @@ nav .navbar-toggler {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100%;
-  letter-spacing: 2px;
+  z-index: 10;
+  overflow: hidden;
   color: #fff;
 }
 
-.carousel-text h1 {
-  padding: 1rem 2rem;
-  text-transform: uppercase;
+.hero-img .hero-text h1 {
   font-size: 3.6rem;
+  padding: .3em;
+  margin-bottom: .5em;
+  text-transform: uppercase;
   border-bottom: 2px solid var(--maninColor);
 }
 
-.carousel-text p {
-  font-size: 3.4rem;
+.hero-img .hero-text p {
+  font-size: 3rem;
+}
+
+.hero-img-one {
+  background-image: url("/img/HeroIMG/bathroom-g7da78a21b_1920.jpg");
+}
+
+.hero-img-two {
+  background-image: url("/img/HeroIMG/bedroom-gce56ceb2f_1920.jpg");
+}
+
+.hero-img-three {
+  background-image: url("/img/HeroIMG/kuchnia3.jpg");
 }
 
 .carousel-main-button {
@@ -403,7 +395,7 @@ nav .navbar-toggler {
 }
 
 .about-hero {
-  background-image: url("/img/AboutUS/building-2762238_1920.jpg");
+  background-image: url("../img/AboutUS/bulldozer-410119_1920.jpg");
   background-position: center;
   background-size: cover;
   -o-object-fit: cover;
@@ -470,11 +462,14 @@ nav .navbar-toggler {
 }
 
 @media (max-width: 992px) {
-  .carousel-text h1 {
+  .hero-img {
+    width: 100%;
+  }
+  .hero-img .hero-text h1 {
     font-size: 3rem;
   }
-  .carousel-text p {
-    font-size: 3.4rem;
+  .hero-img .hero-text p {
+    font-size: 2.4rem;
   }
   .carousel-main-button {
     font-size: 2rem;
@@ -530,21 +525,22 @@ nav .navbar-toggler {
     font-size: 2.4rem;
     margin-right: 1rem;
   }
-  .main-hero-carousle {
-    height: 100vh;
+  .navbar-brand span {
+    display: none;
   }
-  .carousel-item {
-    height: 100vh;
+  .hero-img {
+    height: 120vh;
+    width: 100%;
   }
-  .carousel-text {
+  .hero-img .hero-text {
     text-align: center;
   }
-  .carousel-text h1 {
+  .hero-img .hero-text h1 {
     padding: 1rem 2rem;
-    font-size: 1.8rem;
+    font-size: 3rem;
   }
-  .carousel-text p {
-    font-size: 1.4rem;
+  .hero-img .hero-text p {
+    font-size: 2.4rem;
   }
   .carousel-main-button {
     font-size: 1rem;
@@ -598,14 +594,6 @@ nav .navbar-toggler {
   .footer .list-group-item-contact i {
     margin-right: 1rem;
     font-size: 1.4rem;
-  }
-  .about-hero {
-    height: 400px;
-  }
-  .about-us-body {
-    width: 100%;
-    padding: 0.5rem 0rem;
-    font-size: 2rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -10,7 +10,7 @@ html {
 
 body { 
 	background-color: #1b1c1d;
-	background-size: 120%;
+	
 }
 :root {
 	--maninColor: #ffbe00;
@@ -51,12 +51,21 @@ nav {
 		color: var(--maninColor);
 	}
 
+	.logo {
+		position: relative;
+		height: 42px;
+		width: 160px;
+	}
+	
+
 	.nav-link {
 		font-weight: 500;
 	}
 	.navbar-brand {
-		font-size: 3rem;
+		font-size: 2.6rem;
 	}
+	
+	
 	.navbar-toggler {
 		font-size: 2.5rem;
 		padding: 0rem 1.8rem;
@@ -65,72 +74,64 @@ nav {
 
 // Sekscja głowna karuzela
 
-.main-hero-carousle {
-	height: 800px;
-}
-.carousel-item {
-	height: 800px;
-	overflow: hidden;
-}
 
-.carousel-item-box {
-	position: absolute;
-	height: 100%;
-	width: 100%;
-}
-.carousel-img {
+.hero-img {
 	position: relative;
-	z-index: 0;
-	height: 100%;
-	background-attachment: fixed;
 	background-position: center;
 	background-size: cover;
-}
+	height: 800px;
+	width: 100%;
+	overflow: hidden;
+	z-index: 1;
 
-.carousel-img-one {
-	background-image: url('../img/HeroIMG/kuchnia3.jpg');
-}
-.carousel-img-two {
-	background-image: url('../img/HeroIMG/bedroom-gce56ceb2f_1920.jpg');
-}
-.carousel-img-three {
-	background-image: url('../img/HeroIMG/bathroom-g7da78a21b_1920.jpg');
-}
+	.hero-text {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		z-index: 10;
+		overflow: hidden;
+		color: #fff;
 
-.carousel-text {
-	display: flex;
-	text-align: center;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	height: 100%;
-
-	letter-spacing: 2px;
-	color: #fff;
-	h1 {
-		padding: 1rem 2rem;
-		text-transform: uppercase;
-		font-size: 3.6rem;
-		border-bottom: 2px solid var(--maninColor);
+		h1 {
+			font-size: 3.6rem;
+			padding: .3em;
+			margin-bottom: .5em;
+			text-transform: uppercase;
+			border-bottom: 2px solid var(--maninColor);
+		}
+		p {
+			font-size: 3rem;
+		}
 	}
-	p {
-		font-size: 3.4rem;
-	}
+
 }
+
+.hero-img-one {
+	background-image: url('/img/HeroIMG/bathroom-g7da78a21b_1920.jpg')
+}
+.hero-img-two {
+	background-image: url('/img/HeroIMG/bedroom-gce56ceb2f_1920.jpg')
+}
+.hero-img-three {
+	background-image: url('/img/HeroIMG/kuchnia3.jpg')}
 .carousel-main-button {
-	margin-top: 2rem;
-	font-size: 2rem;
-	background-color: var(--maninColor);
-	border-radius: 5px;
-	padding: 1rem 5rem;
-	transition: 0.3s;
-	a {
+		margin-top: 2rem;
+		font-size: 2rem;
+		background-color: var(--maninColor);
+		border-radius: 5px;
+		padding: 1rem 5rem;
+		transition: 0.3s;
+	  }
+	  
+.carousel-main-button a {
 		text-decoration: none;
 		color: var(--headingColor);
 		text-transform: uppercase;
 		font-weight: bold;
-	}
-}
+	  }
+
 .carousel-main-button:hover {
 	background-color: #fff;
 	color: var(--headingColor);
@@ -214,7 +215,7 @@ nav {
 	border-bottom: 1px solid var(--maninColor);
 	i {
 		font-size: 4rem;
-		color: var(--maninColor);
+		color: var(--maninColor); 
 	}
 	h3 {
 		padding: 0.5em 0em;
@@ -343,7 +344,7 @@ nav {
 // STRONA ABOUTUS
 
 .about-hero {
-	background-image: url('/img/AboutUS/building-2762238_1920.jpg');
+	background-image: url('../img/AboutUS/bulldozer-410119_1920.jpg');
 
 	background-position: center;
 	background-size: cover;
@@ -397,14 +398,39 @@ nav {
 	}
 }
 
+
+
+// STRONA GALERY
+
+
+
+	
+
+	
+
+		
+			
+
+			
+
+	
+	
+			
+		
+
+
 @media (max-width: 992px) {
-	.carousel-text {
-		h1 {
-			font-size: 3rem;
+	.hero-img {
+		width: 100%;
+		.hero-text {
+			h1 {
+				font-size: 3rem;
+			}
+			p {
+				font-size: 2.4rem;
+			}
 		}
-		p {
-			font-size: 3.4rem;
-		}
+	
 	}
 	.carousel-main-button {
 		font-size: 2rem;
@@ -461,27 +487,30 @@ nav {
 			font-size: 2.4rem;
 			margin-right: 1rem;
 		}
-
+span {
+	display: none;
+}
 		font-size: 1.8rem;
 	}
 
-	.main-hero-carousle {
-		height: 100vh;
-	}
-	.carousel-item {
-		height: 100vh;
-	}
-	.carousel-text {
-		text-align: center;
-		h1 {
-			padding: 1rem 2rem;
+	.hero-img{
+		height: 120vh;
+		width: 100%;
 
-			font-size: 1.8rem;
-		}
-		p {
-			font-size: 1.4rem;
+		.hero-text {
+			text-align: center;
+			h1 {
+				padding: 1rem 2rem;
+	
+				font-size: 3rem;
+			}
+			p {
+				font-size: 2.4rem;
+			}
 		}
 	}
+	
+
 	.carousel-main-button {
 		font-size: 1rem;
 		padding: 1rem 4rem;
@@ -535,15 +564,5 @@ nav {
 				font-size: 1.4rem;
 			}
 		}
-	}
-
-	.about-hero {
-		height: 400px;
-	}
-
-	.about-us-body {
-		width: 100%;
-		padding: 0.5rem 0rem;
-		font-size: 2rem;
 	}
 }

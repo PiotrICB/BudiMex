@@ -28,9 +28,8 @@
 	<body>
 		<nav class="navbar navbar-expand-lg bg-light py-3 m-0 sticky-top">
 			<div class="container">
-				<a class="navbar-brand px-3" href="index.html"
-					><i class="fa-solid fa-screwdriver-wrench px-1"></i> BudiMex</a
-				>
+				<a class="navbar-brand px-3 " href="index.html"> <img class="logo" src="img/Screenshot.png" alt=""> <span>BudiMex</span></a>
+				
 				<button
 					class="navbar-toggler"
 					type="button"
@@ -76,9 +75,61 @@
 		</nav>
 
 		<header>
-			<section class="main-hero about-hero">
-				<p class="main-hero-text text-light">o nas</p>
-				<div class="hero-shadow"></div>
+			<section class="hero-galery">
+				<div id="carouselExample" class="carousel slide">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class=" hero-img hero-img-one">
+								<div class="hero-text">
+									<h1 class="text-light" >kompleksowe usługi remontowe mazowsze</h1>
+									<p >Wysoki standard to żaden problem</p>
+									<button   class="carousel-main-button" ><a href="projects.html">Dowiedz się więcej</a></button>
+								</div>
+								<div class="hero-shadow"></div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="hero-img hero-img-two">
+								<div class="hero-text">
+									<h1 class="text-light" >kompleksowe usługi remontowe mazowsze</h1>
+                          <p >Nie boimy się wyzwań</p>
+						  <button   class="carousel-main-button" ><a href="projects.html">Dowiedz się więcej</a></button>
+								</div>
+								<div class="hero-shadow"></div>
+							</div>
+							
+						</div>
+						<div class="carousel-item">
+							<div class="hero-img hero-img-three">
+								<div class="hero-text">
+									<h1 class="text-light">kompleksowe usługi remontowe mazowsze</h1>
+									<p >Wykończenia od A do Z</p>
+									<button   class="carousel-main-button" ><a href="projects.html">Dowiedz się więcej</a></button>
+								</div>
+								<div class="hero-shadow"></div>
+							</div>
+							
+						</div>
+					</div>
+					<button
+						class="carousel-control-prev"
+						type="button"
+						data-bs-target="#carouselExample"
+						data-bs-slide="prev"
+					>
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button
+						class="carousel-control-next"
+						type="button"
+						data-bs-target="#carouselExample"
+						data-bs-slide="next"
+					>
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
 			</section>
 		</header>
 
@@ -99,7 +150,7 @@
 				</div>
 			</section>
 		</main>
-		<footer class="footer">
+		<footer class="footer py-4">
 			<div class="container">
 				<div class="row">
 					<div class="footer-contact text-light col-12 col-md-6 col-lg-3 py-4">
@@ -190,9 +241,11 @@
 			</div>
 		</footer>
 
-
-	
-			
+		<div class="your-class slick">
+			<div>your content</div>
+			<div>your content</div>
+			<div>your content</div>
+		</div>
 
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
